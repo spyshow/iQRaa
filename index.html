@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iQRaa - Let's Learn</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/modernizr.js"></script>
+  </head>
+  <body>
+    
+    <div class="row" id="header">
+      <div class="large-12 columns">
+        <div class="large-3 columns" id="logo">
+           <img alt="Logo" src="img/image110.png" />    
+        </div>
+        <div class="large-6 columns" id="nav">
+            <ul class="nav">
+                <li>Home</li>
+                <li>Articles</li>
+                <li>Courses</li>
+                <li>About us</li>
+                <li>Register or Signin</li>
+            </ul>
+        </div>
+        <div class="large-3 columns" id="search">
+              
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-3 push-9 columns">3</div>
+      <div class="small-9 pull-3 columns">9, last</div>
+    </div> 
+    <div class="row">
+      <ul class="large-block-grid-3 small-block-grid-2">
+        <li><img src="img/image110.png"></li>
+        <li><img src="img/image111.png"></li>
+        <li><img src="img/logo1.png"></li>
+      </ul>
+    </div> 
+    <!-- orbit -->
+
+    <div class="orbit-container large-centered">
+      <ul data-orbit>
+        <li>
+          <img src="img/image110.png" alt="slide 1" />
+          <div class="orbit-caption">
+            Caption One.
+          </div>
+        </li>
+        <li class="active">
+          <img src="img/image111.png" alt="slide 2" />
+          <div class="orbit-caption">
+            Caption Two.
+          </div>
+        </li>
+        <li>
+          <img src="img/logo1.png" alt="slide 3" />
+          <div class="orbit-caption">
+            Caption Three.
+          </div>
+        </li>
+      </ul>
+           
+    </div>
+
+      <ol class="orbit-bullets">
+        <li data-orbit-slide-number="slide 1">1</li>
+        <li data-orbit-slide-number="slide 2" class="active">2</li>
+        <li data-orbit-slide-number="slide 3">3</li>
+      </ol>
+    <script src="js/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation('orbit', {
+        timer_speed: 10000,
+        animation_speed: 500,
+        bullets: false,
+        bullets_container_class: 'orbit-bullets',
+        stack_on_small: true
+      });
+    </script>
+  </body>
+</html>
